@@ -39,26 +39,25 @@
         names.appendChild(name);
         console.log(names);
 
-
         featured = document.getElementById("featured-items");
         var new_images = document.createElement("img");
         new_images.setAttribute("src", featured_item.image);
         featured.appendChild(new_images);
         console.log(featured);
 
-
-
-        new_descriptions = document.getElementById("featured-items", "h2");
+        new_descriptions = document.getElementById("featured-items");
         var new_description = document.createElement("p");
         var description = document.createTextNode(featured_item.description);
         new_descriptions.appendChild(description);
         console.log(new_description);
 
+        line_break = document.getElementById("featured-items");
+        var linebreak = document.createElement("br");
+        line_break.appendChild(linebreak);
+        console.log(new_description);
 
-       // var new_features = [names, new_descriptions];
-    //    var join_features = new_features.join();
-
-
+        // var new_features = [names, new_descriptions];
+        //    var join_features = new_features.join();
     }
 
 }());
