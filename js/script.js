@@ -1,5 +1,5 @@
 // Be sure to add an IIFE to scope your work!
-(function() {
+(function () {
     var aside = document.getElementsByTagName("aside");
     for (a = 0; a < aside.length; a++) {
         aside[0].removeAttribute("class");
@@ -12,12 +12,12 @@
     var newitems = {
         "items": [
             {
-                "name": "Hazelnut Cappuccino. ",
+                "name": "Hazelnut Cappuccino.",
                 "image": "images/cappuccino.jpg",
                 "description": "A warm, soothing cappuccino with a touch of hazelnut to warm you as the weather turns"
             },
             {
-                "name": "Chocolate Cake. ",
+                "name": "Chocolate Cake.",
                 "image": "images/choc-cake.jpg",
                 "description": "Our chocolate cake is rich, moist, and dark. More chocolate to love."
             }
@@ -30,9 +30,16 @@
             pic = item.image,
             descrip = item.description;
 
+        var h3 = document.createElement("h3");
+        var title = document.createTextNode(name);
+        console.log(title);
+        h3.appendChild(title);
+        week.appendChild(h3);
+
         var p = document.createElement("P");
         week.appendChild(p);
-        p.innerHTML = (name + descrip);
+        p.innerHTML = (descrip);
+
         var newpic = document.createElement("img");
         week.appendChild(newpic);
         newpic.setAttribute("src", pic);
