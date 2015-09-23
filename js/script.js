@@ -6,7 +6,7 @@ var Featured = {
     items : [
         {
             name: "Hazelnut Cappuccino",
-            image: "images/cappuccino",
+            image: "images/cappuccino.jpg",
             description: "A warm, soothing cappuccino with a touch of hazelnut to warm you as the weather turns."
         },
         {
@@ -20,77 +20,39 @@ var Featured = {
 var items = Featured.items;
 console.log(items)
 
-var i=0;
-for (i=0; i<items.length; i++){
-console.log(items[i]);
-    
-var HazelCap = items[i]
-    name =items.name,
-    img = items.image,
-    desc = items.description;
-console.log(HazelCap.name);
-    
+var targetarea = document.getElementById("featured-items");
+
 var getaside = document.getElementsByTagName("aside") 
 for (i = 0; i < getaside.length; i++) { 
-getaside[i].className = "show";} 
+    getaside[i].className = "show";}
 
+var i=0;
+for (i=0; i<items.length; i++){
+    console.log(items[i]);
+    
+    var HazelCap = items[i];
+    name = HazelCap.name,
+    img = HazelCap.image,
+    desc = HazelCap.description;
+    console.log(HazelCap.name);
 
-var targetarea = document.getElementById("featured-items");
-
+var space = document.createTextNode(" ");
+var heading = document.createElement("h3");    
+var textheading = document.createTextNode(name);
+    
+var image= document.createElement("img");
+image.setAttribute("src", img);
+    
 var p = document.createElement("p");
-    
-var heading = document.createElement("h3");
-    
-var textheading = document.createTextNode(HazelCap.name);
-    
-var text = document.createTextNode(HazelCap.description);
-    
-var image= document.createElement("img");
-var image= document.createElement("img");
-image.setAttribute("id", "image-src");
-image.setAttribute("src", Featured.items[i].image);
-targetarea.appendChild(image);
-    
+var text = document.createTextNode(desc);
 
-targetarea.appendChild(textheading);
+targetarea.appendChild(heading);
+targetarea.appendChild(image);
 targetarea.appendChild(p);
-targetarea.appendChild(image);
-heading.appendChild(text);
-p.appendChild(heading);
+heading.appendChild(textheading);
+p.appendChild(text);
 
-
-    
-var ChocCake = items[i]
-    name =items.name,
-    img = items.image,
-    desc = items.description;
-console.log(ChocCake.name);
-
-var targetarea = document.getElementById("featured-items");
-
-var p2 = document.createElement("p");
-    
-var heading2 = document.createElement("h3");
-    
-var textheading = document.createTextNode(ChocCake.name);
-    
-var text = document.createTextNode(ChocCake.description);
-    
-var addImage2= document.createElement("img");
-addImage2.setAttribute("id", "image-src");
-addImage2.setAttribute("src", Featured.items[i].image);
-targetarea.appendChild(addImage2);
-
-
-targetarea.appendChild(textheading);
-targetarea.appendChild(p2);
-targetarea.appendChild(image);
-heading2.appendChild(text);
-p2.appendChild(heading2);
-
-    
 }
-    
 }())
     
     
