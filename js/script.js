@@ -46,8 +46,10 @@ var textheading = document.createTextNode(HazelCap.name);
 var text = document.createTextNode(HazelCap.description);
     
 var image= document.createElement("img");
-//image.setAttribute("src", image);
-//image = Featured.items[i].image;
+var image= document.createElement("img");
+image.setAttribute("id", "image-src");
+image.setAttribute("src", Featured.items[i].image);
+targetarea.appendChild(image);
     
 
 targetarea.appendChild(textheading);
@@ -57,16 +59,12 @@ heading.appendChild(text);
 p.appendChild(heading);
 
 
+    
 var ChocCake = items[i]
     name =items.name,
     img = items.image,
     desc = items.description;
 console.log(ChocCake.name);
-    
-var getaside = document.getElementsByTagName("aside") 
-for (i = 0; i < getaside.length; i++) { 
-getaside[i].className = "show";} 
-
 
 var targetarea = document.getElementById("featured-items");
 
@@ -78,10 +76,11 @@ var textheading = document.createTextNode(ChocCake.name);
     
 var text = document.createTextNode(ChocCake.description);
     
-var image2= document.createElement("img");
-//image.setAttribute("src", image);
-//image = Featured.items[i].image;
-    
+var addImage2= document.createElement("img");
+addImage2.setAttribute("id", "image-src");
+addImage2.setAttribute("src", Featured.items[i].image);
+targetarea.appendChild(addImage2);
+
 
 targetarea.appendChild(textheading);
 targetarea.appendChild(p2);
