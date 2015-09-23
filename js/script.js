@@ -12,12 +12,12 @@
     var newitems = {
         "items": [
             {
-                "name": "Hazelnut Cappuccino.",
+                "name": "Hazelnut Cappuccino",
                 "image": "images/cappuccino.jpg",
                 "description": "A warm, soothing cappuccino with a touch of hazelnut to warm you as the weather turns"
             },
             {
-                "name": "Chocolate Cake.",
+                "name": "Chocolate Cake",
                 "image": "images/choc-cake.jpg",
                 "description": "Our chocolate cake is rich, moist, and dark. More chocolate to love."
             }
