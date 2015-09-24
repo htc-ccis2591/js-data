@@ -1,6 +1,7 @@
 (function () {
     var Items = {
 
+
             "featuredItems": [
                 {
                     "name": "Hazelnut Cappuccino",
