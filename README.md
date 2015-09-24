@@ -30,4 +30,6 @@ Item 2:
 - description: "Our chocolate cake is rich, moist, and dark.  More chocolate to love."
 
 ### Use the Data to Show the Features
-Use your JSON data to build and add HTML to show the two featured items in the “featured-items” div.  Create and add the HTML to the page using JavaScript.  The code that you write should be able to add any number of featured items to the page.  
+Use your JSON data to build and add HTML to show the two featured items in the “featured-items” div.
+Create and add the HTML to the page using JavaScript.  The code that you write should be able to add any
+number of featured items to the page.
