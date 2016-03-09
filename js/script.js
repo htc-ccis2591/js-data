@@ -1,5 +1,6 @@
 $(function () {
 
+    
     //hide featured sections
     $('aside').hide();
 
@@ -55,6 +56,7 @@ $(function () {
         }).fail(function () {
             console.log('Loading Featured Specials failed.');
         });
+        
 
     };
 
