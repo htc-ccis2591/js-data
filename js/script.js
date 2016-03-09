@@ -3,6 +3,14 @@ $(function() {
     var jsonItems;
     var featuredItems = '';
     
+    $.ajax({
+       beforeSend: function(xhr){
+        if (xhr.overrideMimeType){
+            xhr.overrideMimeType("application/json");
+            }
+        }
+    });
+    
     function loadItems() {
         $.getJSON('../items.json')
         .done(function(data){
