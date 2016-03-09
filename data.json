@@ -1,0 +1,7 @@
+{
+    "specails" :
+    [
+        { "name" : "Hazlenut Cappuccino", "image" : "images/cappuccino.jpg", "description" : "A warm, soothing cappuccino with a tounch of hazelnut to warm you as the weather turns."},
+        { "name" : "Choclate Cake", "image" : "images/choc-cake.jpg", "description" : "Our choclate cake is rich, moist, and dark. More choclate to love."}
+    ]
+}
