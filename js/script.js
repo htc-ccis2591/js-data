@@ -1,6 +1,6 @@
 // Be sure to add an IIFE to scope your work!
 $(function () {
-    var content;
+    var content = "";
     $.getJSON("Assig.json")
         .done(function (data) {
 
@@ -10,13 +10,14 @@ $(function () {
 
             for (var i = 0; i < data.menu.length; i++) {
 
-                content += '<h3>' + menu[i].Name + '</h3>';
-                content += '<img src = "' + menu[i].Image + '"/>';
-                content += '<p>' + menu[i].Description + '</p>';
+                content += '<h3>' + data.menu[i].Name + '</h3>';
+                content += '<img src = "' + data.menu[i].Image + '"/>';
+                content += '<p>' + data.menu[i].Description + '</p>';
+                document.getElementById("featured-items").innerHTML = content;
                 //.show(content);
             }
 
-        })
+        });
 
 
 });
