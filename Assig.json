@@ -9,8 +9,8 @@
 
         {
             "Name": "Chocolate Cake",
-            "image": "images/chocolate.jpg",
-            "description": "Our chocolate Cake is rich, moist and dark.More chocolate to love."
+            "Image": "images/chocolate.jpg",
+            "Description": "Our chocolate Cake is rich, moist and dark.More chocolate to love."
 
   }
 ]
