@@ -1,0 +1,18 @@
+{
+    "menu": [
+
+        {
+            "Name": "Hazelnut Cappuccino",
+            "Image": "images/cappuccino.jpg",
+            "Description": "A warm, sothhing cappuccino with a touch of hazelnut to warm you as the weather turns."
+  },
+
+        {
+            "Name": "Chocolate Cake",
+            "Image": "images/choc-cake.jpg",
+            "Description": "Our chocolate Cake is rich, moist and dark.More chocolate to love."
+
+  }
+]
+
+}
