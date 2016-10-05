@@ -10,7 +10,7 @@ body {
 
 aside {
 	margin: 40px 20px 10px 0;
-	width: 350px;
+	width: 450px;
 	float: right;
     padding: 10px;
     border: 2px solid #000000;
@@ -47,4 +47,13 @@ ul {
 
 li {
 	padding-bottom: .25em;
+}
+#featured-items{
+    text-decoration: underline;
+}
+
+#featured-items img {
+    width:100px;
+    height:100px;
+    float: right;
 }
